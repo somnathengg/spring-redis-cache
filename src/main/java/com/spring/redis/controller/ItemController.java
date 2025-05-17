@@ -35,7 +35,7 @@ public class ItemController {
 
     @PostMapping("/create-item")
     public Item createItem(@RequestBody Item request) {
-    	System.out.println("inside create item post");
+    	System.out.println("inside create item");
         return itemService.createItem(request);
     }
 

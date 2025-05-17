@@ -23,7 +23,7 @@ public class ItemController {
   
     @GetMapping("/get-all-items")
     public List<Item> getAllItems() {
-    	System.out.println("inside get all items get");
+    	System.out.println("inside get all items");
         return itemService.items();
     }
 

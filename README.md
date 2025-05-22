@@ -5,7 +5,7 @@ docker run --name redis-cache -p 6379:6379 -d redis redis-server --requirepass y
 
 *************************command to set password in redis server *************
 
-redis-server --requirepass "Msdhon@7#redis88"
+redis-server --requirepass "yourpwd"
 
 
 **********************command to connect redis cli******************************

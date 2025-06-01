@@ -2,7 +2,6 @@ package com.spring.redis.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -14,9 +13,6 @@ import com.spring.redis.repository.ItemRepository;
 //@Log4j2
 public class ItemService {
     private final ItemRepository itemRepository;
-
-    @Autowired
-    private CacheService cacheService;
     
     public ItemService(ItemRepository itemRepository) {
         this.itemRepository = itemRepository;

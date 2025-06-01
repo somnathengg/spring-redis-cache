@@ -29,7 +29,7 @@ public class ItemController {
 
     @GetMapping("/get-item-by-id")
     public Item getItem(@RequestParam("id") Integer id) {
-    	System.out.println("inside get item path variable >>"+id);
+    	System.out.println("get data for key-->"+id);
         return itemService.getItem(id);
     }
 

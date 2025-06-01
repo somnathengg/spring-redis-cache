@@ -10,7 +10,6 @@ import com.spring.redis.entity.Item;
 import com.spring.redis.repository.ItemRepository;
 
 @Service
-//@Log4j2
 public class ItemService {
     private final ItemRepository itemRepository;
     

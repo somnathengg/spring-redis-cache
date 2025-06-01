@@ -41,7 +41,7 @@ public class ItemController {
 
     @PutMapping("/update-item-by-id")
     public Item updateItem(@RequestParam("id") Integer id, @RequestBody Item request) {
-    	System.out.println("inside update item put");
+    	System.out.println("inside update item put for key--->"+id);
         return itemService.updateItem(id, request);
     }
 }
